@@ -1,4 +1,12 @@
-
+*.class
 *.iml
-target/**
+target/
 .idea/**
+*.jar
+
+
+/demoweb/target/*
+/demobatch/target
+/demomodel/target/*
+/demobusiness/target/
+
