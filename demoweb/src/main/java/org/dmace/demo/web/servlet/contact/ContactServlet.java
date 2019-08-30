@@ -17,7 +17,7 @@ public class ContactServlet extends BaseServlet {
 
         // 1. Create the Bean
         Contact c = new Contact();
-        c.setFirstname("John");
+        c.setFullname("John");
         c.setLastName("Doe");
         c.setComments("Created by servlet");
         c.setDob(LocalDate.now());

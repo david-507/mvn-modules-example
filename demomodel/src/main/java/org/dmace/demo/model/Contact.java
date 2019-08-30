@@ -6,8 +6,9 @@ import java.util.Objects;
 public class Contact {
 
     private Long id;
-    private String firstname;
+    private String name;
     private String lastName;
+    private String fullname;
     private String group;
     private LocalDate dob;
     private String phone;
@@ -22,8 +23,10 @@ public class Contact {
         return id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() { return name; }
+
+    public String getFullname() {
+        return fullname;
     }
 
     public String getLastName() {
@@ -33,7 +36,7 @@ public class Contact {
     public String getGroup() {
         return group;
     }
-
+//        contact.setGroup;
     public LocalDate getDob() {
         return dob;
     }
@@ -58,8 +61,12 @@ public class Contact {
         this.id = id;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public void setLastName(String lastName) {
@@ -96,7 +103,7 @@ public class Contact {
         if (o == null || getClass() != o.getClass()) return false;
         Contact contact = (Contact) o;
         return Objects.equals(id, contact.id) &&
-                Objects.equals(firstname, contact.firstname) &&
+                Objects.equals(fullname, contact.fullname) &&
                 Objects.equals(lastName, contact.lastName) &&
                 Objects.equals(group, contact.group) &&
                 Objects.equals(dob, contact.dob) &&
@@ -108,14 +115,14 @@ public class Contact {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastName, group, dob, phone, email, address, comments);
+        return Objects.hash(id, fullname, lastName, group, dob, phone, email, address, comments);
     }
 
     @Override
     public String toString() {
         return "Contact{" +
                 "id=" + id +
-                ", firstname='" + firstname + '\'' +
+                ", firstname='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
     }

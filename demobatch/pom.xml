@@ -30,6 +30,16 @@
       <artifactId>demobusiness</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.6</version>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.ez-vcard</groupId>
+      <artifactId>ez-vcard</artifactId>
+      <version>0.10.5</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
